@@ -2,7 +2,11 @@
 
 ## FICHA2
 
+expressões regulares
+
 ## FICHA3
+
+expressões regulares e grupos de captura
 
 ## FICHA4
 
