@@ -1,11 +1,12 @@
 import ply.lex as lex
 
-tokens = ['NOME', 'NUM', 'PONTOS', 'NUM', 'PONTOVIRGULA']
+tokens = ['CATEGORIA','STRING', 'PONTOS', 'NUM', 'PONTOVIRGULA']
 
+t_CATEGORIA = r'(CARNE|BEBIDA|FRUTA|LEGUMES|PASTELARIA)'
 t_PONTOVIRGULA = r';'
-t_PONTOS = r':{1,2}'
+t_PONTOS = r'(:{1,2}|-)'
 t_NUM = r'\d+(.\d+)?'
-t_NOME = r'[A-Za-z]\w*'
+t_STRING = r'[A-Za-z]+'
 
 t_ignore = " \t\n"
 
